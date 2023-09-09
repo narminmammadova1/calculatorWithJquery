@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container d-flex my-5">
+      <div class="card text " style="max-width: 20rem">
+        <div class="card-header border-bottom my-5">
+          <div class="screen1  py-2 h3">
+            <span class="firstNum" style="display: none"></span>
+            <span class="operatorShow" style="display: none"></span>
+            <span class="secondNum" style="display: none"></span>
+          </div>
+          <div id="resultNum" class="screen2 border-top h5 py-2"></div>
+        </div>
+
+        <div class="card-body bg-dark">
+          <button class="btn bg-danger rounded m-1 px-3 num">1</button>
+          <button class="btn bg-danger rounded m-1 px-3 num">2</button>
+          <button class="btn bg-danger rounded m-1 px-3 num">3</button>
+          <button class="btn bg-warning rounded m-1 px-3 opr">+</button>
+
+          <button class="btn bg-warning rounded m-1 px-3 opr">-</button>
+          <button class="btn bg-danger rounded m-1 px-3 num">4</button>
+
+          <button class="btn bg-danger rounded m-1 px-3 num">5</button>
+          <button class="btn bg-danger rounded m-1 px-3 num">6</button>
+          <button class="btn bg-warning rounded ms-1  me-2 px-3 opr">*</button>
+          <button class="btn bg-warning rounded m-1 px-3 opr">/</button>
+
+          <button class="btn bg-danger rounded m-1 px-3 num">7</button>
+        
+          <button class="btn bg-danger rounded m-1 px-3 num">8</button>
+        
+          <button class="btn bg-danger rounded m-1 px-3 num">9</button>
+          <button class="btn bg-warning rounded m-1 px-3 clear">C</button>
+          <button class="btn bg-warning rounded m-1 px-3 equal">=</button>
+
+          <!-- <button class="btn bg-danger rounded m-1 px-3 num">0</button> -->
+          <!-- <button class="btn bg-danger rounded m-1 px-3 num">9</button> -->
+          <button class="btn bg-danger rounded m-1 px-5 num">0</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
